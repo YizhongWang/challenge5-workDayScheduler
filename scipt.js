@@ -31,7 +31,7 @@ saveBtn.on("click", function() {
 
     // console.log(this); //save button
     var time = $(this).siblings(".hour").text();
-    var plan = $(this).siblings(".plan").val();
+    var plan = $(this).siblings(".description").val();
 
     // THEN the text for that event is saved in local storage
     localStorage.setItem(time, plan);
